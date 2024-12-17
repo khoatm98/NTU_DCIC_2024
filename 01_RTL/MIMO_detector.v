@@ -28,6 +28,7 @@ localparam S_DFS_TRANVERSE_BW = 4'd7;
 localparam S_DFS_CHECK        = 4'd8;
 localparam S_DFS_COMPUTE      = 4'd9;
 localparam S_OUTPUT           = 4'd10;
+localparam S_DFS_TRUNCATE     = 4'd11;
 /************/
 /* Reg/Wire */
 /************/
@@ -81,8 +82,8 @@ end
 
 always @(*) begin
     case(next_state)
-        S_DFS_TRANVERSE_FW  : curr_level_w = curr_level_r + 1;
-        S_DFS_TRANVERSE_BW  : curr_level_w = curr_level_r - 1;
+        S_DFS_TRANVERSE_FW,S_DFS_TRUNCATE : curr_level_w = curr_level_r + 1;
+        S_DFS_TRANVERSE_BW  : curr_level_w = curr_state == S_DFS_TRUNCATE ? curr_level_r - 2 : curr_level_r - 1;
 		S_INPUT_Y           : curr_level_w = 1;
         default             : curr_level_w = curr_level_r;
     endcase
@@ -103,9 +104,9 @@ generate
         always @(*) begin
             if (i == curr_level_r) begin
                 case(curr_state)
-                    S_DFS_TRANVERSE_FW  : checking_w[curr_level_r] = checking_r[curr_level_r] + 1;
-                    S_RST               : checking_w[curr_level_r] = 0;
-					default             : checking_w[curr_level_r] = checking_r[curr_level_r];
+                    S_DFS_TRANVERSE_FW, S_DFS_TRUNCATE  : checking_w[i] = checking_r[curr_level_r] + 1;
+                    S_RST               : checking_w[i] = 0;
+					default             : checking_w[i] = checking_r[curr_level_r];
                 endcase
             end else begin
                 checking_w[i] = checking_r[i];
@@ -196,7 +197,7 @@ PED PED_inst(.i_clk  (Clk),
 
 
 
-assign can_tranverse_w = ~&checking_r[curr_level_r];
+assign can_tranverse_w = ~&checking_r[curr_level_r+1];
 
 generate
     for (i = 0; i < 5; i = i + 1) begin
@@ -295,7 +296,8 @@ always@ (*) begin
         S_DFS_TRANVERSE_FW  : next_state = S_DFS_COMPUTE;
 		S_DFS_COMPUTE       : next_state = compute_distance_done_w ? S_DFS_CHECK : S_DFS_COMPUTE;
 		S_DFS_CHECK         : next_state = is_leaf_w || prune_w ? S_DFS_TRANVERSE_BW : S_DFS_TRANVERSE_FW;
-        S_DFS_TRANVERSE_BW  : next_state = can_tranverse_w ? S_DFS_TRANVERSE_FW      : (curr_level_r == 0 ? S_OUTPUT : S_DFS_TRANVERSE_BW);
+        S_DFS_TRANVERSE_BW  : next_state = can_tranverse_w ? S_DFS_TRANVERSE_FW      : (curr_level_r == 0 ? S_OUTPUT : S_DFS_TRUNCATE);
+		S_DFS_TRUNCATE      : next_state = S_DFS_TRANVERSE_BW;
         S_OUTPUT            : next_state = S_RST; 
         default             : next_state = S_RST; 
     endcase
@@ -325,7 +327,7 @@ generate
             if(Reset) begin
                 checking_r[i] <= 0;
             end else begin
-                checking_r[i] <= checking_w[i];
+				checking_r[i] <= checking_w[i];
             end
         end
     end

@@ -14,7 +14,7 @@
 
 `timescale 1ns/10ps
 `define PERIOD    10.0
-`define MAX_CYCLE 100
+`define MAX_CYCLE 1000
 `define RST_DELAY 2.0
 
 `define IDATA  "../00_TESTBED/pattern/data_I.dat"
