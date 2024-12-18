@@ -22,11 +22,11 @@ function automatic [WIDTH-1:0] fx_mul;
 		
 	
 	begin
-        if (i_data_b == 0) begin // +- 1/sqrt(2)
+        if (i_data_b == 0) begin // 
 			tmp = 0;
-        end else if (|i_data_b[FRAC_W-1 : 0])  begin // +- 1
-			tmp = {{6{i_data_a[WIDTH-1]}}, i_data_a, 1'b0} + {i_data_a,7'd0} + {{2{i_data_a[WIDTH-1]}}, i_data_a, 5'd0} + 
-				  {{3{i_data_a[WIDTH-1]}}, i_data_a, 4'd0} + {{5{i_data_a[WIDTH-1]}}, i_data_a, 2'd0};// + (i_data_a<<0);
+        end else if (|i_data_b[FRAC_W-1 : 0])  begin //+- 1/sqrt(2)
+			tmp = $signed({{6{i_data_a[WIDTH-1]}}, i_data_a, 1'b0}) + $signed({i_data_a,7'd0}) + $signed({{2{i_data_a[WIDTH-1]}}, i_data_a, 5'd0}) + 
+				  $signed({{3{i_data_a[WIDTH-1]}}, i_data_a, 4'd0}) + $signed({{5{i_data_a[WIDTH-1]}}, i_data_a, 2'd0});// + (i_data_a<<0);
 		end else begin // +- 1
 			tmp = {{i_data_a[WIDTH-1]}, i_data_a, 8'b0};
         end
@@ -53,8 +53,8 @@ wire signed [WIDTH*2-1:0] mult_ad = fx_mul(real_a, imag_b);          // 2 sign 2
 wire signed [WIDTH*2-1:0] mult_bc = fx_mul(imag_a, real_b);          // 2 sign 2 bit integer 30 fractional bit
 
 always@ (posedge i_clk) begin
-	o_real_data_r <= i_valid ? mult_ac - mult_bd : o_real_data_r;  // 1 sign 2 bit integer 30 fractional bit 
-	o_imag_data_r <= i_valid ? mult_ad + mult_bc : o_imag_data_r;  // 1 sign 2 bit integer 30 fractional bit
+	o_real_data_r <= i_valid ? $signed(mult_ac) - $signed(mult_bd) : o_real_data_r;  // 1 sign 2 bit integer 30 fractional bit 
+	o_imag_data_r <= i_valid ? $signed(mult_ad) + $signed(mult_bc) : o_imag_data_r;  // 1 sign 2 bit integer 30 fractional bit
 	o_valid_r     <= i_valid;
 end
 
@@ -90,8 +90,8 @@ wire signed [WIDTH-1:0] imag_c = i_in_c[WIDTH-1 :0];
 wire signed [WIDTH-1:0] real_d = i_in_d[WIDTH*2-1: WIDTH]; 
 wire signed [WIDTH-1:0] imag_d = i_in_d[WIDTH-1 :0];
 
-wire signed [WIDTH+1:0] sum_real = {{2{real_a[WIDTH-1]}}, real_a} + {{2{real_b[WIDTH-1]}}, real_b} + {{2{real_c[WIDTH-1]}}, real_c} + {{2{real_d[WIDTH-1]}}, real_d};
-wire signed [WIDTH+1:0] sum_imag = {{2{imag_a[WIDTH-1]}}, imag_a} + {{2{imag_b[WIDTH-1]}}, imag_b} + {{2{imag_c[WIDTH-1]}}, imag_c} + {{2{imag_d[WIDTH-1]}}, imag_d};
+wire signed [WIDTH+1:0] sum_real = $signed({{2{real_a[WIDTH-1]}}, real_a}) + $signed({{2{real_b[WIDTH-1]}}, real_b}) + $signed({{2{real_c[WIDTH-1]}}, real_c}) + $signed({{2{real_d[WIDTH-1]}}, real_d});
+wire signed [WIDTH+1:0] sum_imag = $signed({{2{imag_a[WIDTH-1]}}, imag_a}) + $signed({{2{imag_b[WIDTH-1]}}, imag_b}) + $signed({{2{imag_c[WIDTH-1]}}, imag_c}) + $signed({{2{imag_d[WIDTH-1]}}, imag_d});
 
 
 reg [WIDTH*2-1:0]       o_data_r;

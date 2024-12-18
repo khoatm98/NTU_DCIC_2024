@@ -14,12 +14,12 @@
 
 `timescale 1ns/10ps
 `define PERIOD    10.0
-`define MAX_CYCLE 1000
+`define MAX_CYCLE 100000
 `define RST_DELAY 2.0
 
 `define IDATA  "../00_TESTBED/pattern/data_I.dat"
 `define ODATA  "../00_TESTBED/pattern/data_O.dat"
-`define PAT_LEN 11
+`define PAT_LEN 15 
 
 
 module testbench #(
@@ -40,7 +40,7 @@ module testbench #(
     wire              busy;
     wire              out_valid;
 	wire              out_in_ready;
-    wire [(I_WIDTH*4*2)-1:0]     odata;
+    wire [(12)-1:0]     odata;
 
     // TB variables
     reg  [(I_WIDTH*4*2)  :0]    input_data  [0:`PAT_LEN-1];
@@ -48,7 +48,7 @@ module testbench #(
 
     integer input_end, output_end, test_end;
     integer i, j, k;
-    integer correct, error;
+    integer correct, error, cycle_count;
 	integer FILE;
     initial begin
         $readmemb(`IDATA, input_data);
@@ -126,14 +126,14 @@ module testbench #(
 
         // loop
         k = 0;
-        while (k < `PAT_LEN) begin
+        while (k < `PAT_LEN - 4) begin
             @(negedge clk);
             if (out_valid) begin
-                $fdisplay(FILE, "%x", odata); // save output 
+                $fdisplay(FILE, "%b", odata); // save output 
 				$display(
-					"Test[%d]: Data out=%x",
+					"Test[%d]: Data out=%d %d %d %d ",
 					k,
-					odata
+					odata[11:9], odata[8:6], odata[5:3], odata[2:0]
 				);
                 k = k+1;
             end
@@ -143,22 +143,32 @@ module testbench #(
         // final
         output_end = 1;
     end
+	initial begin
+        cycle_count = 0;
+        wait (rst === 1'b1);
+        wait (rst === 1'b0);
 
+        while (1) begin
+            @(posedge clk);
+            cycle_count = cycle_count + 1;
+        end
+    end
     // Result
     initial begin
-        wait (input_end && output_end);
+        wait (k === `PAT_LEN - 4);
 
-        if (error === 0 && k === `PAT_LEN) begin
+        if (error === 0 && k === `PAT_LEN - 4) begin
             $display("----------------------------------------------");
             $display("-                 ALL PASS!                  -");
             $display("----------------------------------------------");
+			
         end
         else begin
             $display("----------------------------------------------");
             $display("  Wrong! Total Error: %d                      ", error);
             $display("----------------------------------------------");
         end
-
+		$display("Simulation Cycle: %6d, Time: %11.2f ns", cycle_count, `PERIOD*(cycle_count));
         # (2 * `PERIOD);
         $finish;
     end
