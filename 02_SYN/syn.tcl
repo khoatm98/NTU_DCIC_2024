@@ -34,7 +34,7 @@ current_design [get_designs $DESIGN]
 link
 
 
-source -echo -verbose ./MIMO_detector_dc.sdc
+source -echo -verbose ./MIMO_detector.sdc
 
 # Compile Design
 current_design [get_designs ${DESIGN}]

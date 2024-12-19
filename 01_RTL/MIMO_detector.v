@@ -10,8 +10,8 @@ parameter O_WIDTH = INT_W + FRAC_W
  input  wire                            i_in_valid,
  input  wire                            flagChannelorData,
  input  wire  [(I_WIDTH*4*2)-1:0]       InData,
- output reg   [(3*4)-1:0]               OutData,
- output reg                             o_in_ready,
+ output       [(3*4)-1:0]               OutData,
+ output                                 o_in_ready,
  output wire                            OutputReady // using 1 when the output is ready to be sent.
 );
 
@@ -73,14 +73,14 @@ wire                  can_tranverse_w;
 wire				  prune_w;
 wire   				  is_leaf_w;
 
-reg [WIDTH*2-1:0] Rs0;
-reg [WIDTH*2-1:0] Rs1;
-reg [WIDTH*2-1:0] Rs2;
-reg [WIDTH*2-1:0] Rs3;
+wire [WIDTH*2-1:0] Rs0;
+wire [WIDTH*2-1:0] Rs1;
+wire [WIDTH*2-1:0] Rs2;
+wire [WIDTH*2-1:0] Rs3;
 
-reg [WIDTH*2-1:0] RS;    // 1 sign 3 bit integer 30 fractional bit
+wire [WIDTH*2-1:0] RS;    // 1 sign 3 bit integer 30 fractional bit
 
-reg [WIDTH*2-1:0] distance_w; 
+wire [WIDTH*2-1:0] distance_w; 
 
 reg [WIDTH*2-1:0] R0_r;
 reg [WIDTH*2-1:0] R1_r;
@@ -91,7 +91,7 @@ reg [WIDTH*2-1:0] R1_w;
 reg [WIDTH*2-1:0] R2_w;
 reg [WIDTH*2-1:0] R3_w;
 
-reg [WIDTH*2-1:0] Rs_sum;
+wire [WIDTH*2-1:0] Rs_sum;
 
 reg [WIDTH*2-1:0] s0_r;
 reg [WIDTH*2-1:0] s1_r;
@@ -105,32 +105,50 @@ reg [WIDTH*2-1:0] s3_w;
 
 reg [WIDTH*2-1:0] y_hat_r;
 reg [WIDTH*2-1:0] y_hat_w;
-reg               RS_done_w;
-reg 			  compute_distance_done_w;
-reg 			  accum_done_w;
+wire               RS_done_w;
+wire 			  compute_distance_done_w;
+wire 			  accum_done_w;
 
 reg               compute_start_r;
 reg [11:0]        o_data_r;
 reg [11:0]        o_data_w;
+
+reg               o_in_ready_r;
+reg               OutputReady_r;
+
+reg input_R_valid_r;
+reg input_Y_valid_r;
+reg  [(I_WIDTH*4*2)-1:0]      InData_r;
+
 genvar i;
 /*********/
 /* INPUT */
 /*********/
 assign input_R_valid_w = flagChannelorData && i_in_valid;
 assign input_Y_valid_w = !flagChannelorData && i_in_valid;
-assign o_in_ready      = curr_state == 1 || curr_state == 2 ||  curr_state == 3 || curr_state == 4 || curr_state == 5;
-assign OutputReady     = curr_state == S_OUTPUT;
+assign o_in_ready      = o_in_ready_r;
+
+assign OutputReady     = OutputReady_r;
 assign OutData         = o_data_r;
+
 always @(posedge Clk) begin
-    R_buffer_r[3] <= input_R_valid_w ? InData        : R_buffer_r[3];
-    R_buffer_r[2] <= input_R_valid_w ? R_buffer_r[3] : R_buffer_r[2];
-    R_buffer_r[1] <= input_R_valid_w ? R_buffer_r[2] : R_buffer_r[1];
-    R_buffer_r[0] <= input_R_valid_w ? R_buffer_r[1] : R_buffer_r[0];
+    input_R_valid_r <= input_R_valid_w;
+    input_Y_valid_r <= input_Y_valid_w;
+    InData_r        <= InData;
 end
 
 always @(posedge Clk) begin
-    Y_buffer_r <= input_Y_valid_w ? InData        : Y_buffer_r;
-	o_data_r   <= o_data_w;
+    R_buffer_r[3] <= input_R_valid_r ? InData_r      : R_buffer_r[3];
+    R_buffer_r[2] <= input_R_valid_r ? R_buffer_r[3] : R_buffer_r[2];
+    R_buffer_r[1] <= input_R_valid_r ? R_buffer_r[2] : R_buffer_r[1];
+    R_buffer_r[0] <= input_R_valid_r ? R_buffer_r[1] : R_buffer_r[0];
+    OutputReady_r <= curr_state == S_DFS_TRANVERSE_DONE;
+end
+
+always @(posedge Clk) begin
+    Y_buffer_r   <= input_Y_valid_r ? InData_r        : Y_buffer_r;
+	o_data_r     <= o_data_w;
+	o_in_ready_r <= (curr_state == 1  || curr_state == 2 || curr_state == S_OUTPUT);
 end
 /******************************/
 /*  S_DFS                     */
@@ -165,37 +183,24 @@ end
 
 
 generate
-    for (i = 0; i < 3; i = i + 1) begin
+    for (i = 0; i < 4; i = i + 1) begin
         always @(*) begin
             if (i == curr_level_r) begin
                 case(curr_state)
-                    ///S_DFS_COMPARE       : checking_w[i] = checking_r[curr_level_r+1] == 8 ? 1 ;
 					S_DFS_COMPARE          : checking_w[i] = checking_r[i] + 1;// ?  checking_r[i] + 1 :  checking_r[i];
 					S_DFS_ENTRY            : checking_w[i] = checking_r[i][3]? 0 :  checking_r[i];
-					//S_DFS_TRANVERSE_BW  : checking_w[i] = checking_r[curr_level_r] + 1;
 					default                : checking_w[i] = checking_r[i];
                 endcase
             end else begin
 				case(curr_state)
-                    ///S_DFS_COMPARE       : checking_w[i] = checking_r[curr_level_r+1] == 8 ? 1 ;
 					S_INPUT_Y              : checking_w[i] = 0;
-					//S_DFS_COMPARE          : checking_w[i] = checking_w[i+1] == 8  ? checking_r[i] + 1 : checking_r[i];
 					default                : checking_w[i] = checking_r[i];
                 endcase
             end
         end
     end
 endgenerate 
-always @(*) begin
-	if (curr_level_r == 3) begin
-		case(curr_state)
-			S_DFS_COMPARE          : checking_w[3] = checking_r[curr_level_r] + 1;
-			S_DFS_ENTRY            : checking_w[3] = checking_r[curr_level_r][3]? 0 :  + checking_r[3];
-			default                : checking_w[3] = checking_r[curr_level_r];
-		endcase
-	end else
-		checking_w[3] = curr_level_r != 3 ? 0 : checking_r[3];
-end
+
 /******************************/
 /*  S_DFS_COMPUTE             */
 /******************************/
@@ -243,9 +248,9 @@ accum accum_inst0(.i_clk  (Clk),
 
 PED PED_inst(.i_clk  (Clk), 
 			 .i_valid(accum_done_w),
-			 .i_in_a (y_hat_r),         //  1 sign 1 bit integer 15 fractional bit
-			 .i_in_b (Rs_sum),              //  1 sign 3 bit integer 30 fractional bit
-			 .o_data (distance_w),      //  1 sign 3 bit integer 30 fractional bit
+			 .i_in_a (y_hat_r),        
+			 .i_in_b (Rs_sum),         
+			 .o_data (distance_w),     
 			 .o_valid(compute_distance_done_w)
 			);
 
@@ -365,11 +370,11 @@ end
 always@ (*) begin
     case(curr_state)
         S_RST                 : next_state = S_INPUT_R0;
-        S_INPUT_R0            : next_state = input_R_valid_w   ? S_INPUT_R1 : S_INPUT_R0;  // Wait to get R vector
-        S_INPUT_R1            : next_state = input_R_valid_w   ? S_INPUT_R2 : S_INPUT_R1;  // Wait to get R vector
-        S_INPUT_R2            : next_state = input_R_valid_w   ? S_INPUT_R3 : S_INPUT_R2;  // Wait to get R vector
-        S_INPUT_R3            : next_state = input_R_valid_w   ? S_INPUT_Y  : S_INPUT_R3;  // Wait to get R vector
-        S_INPUT_Y             : next_state = input_Y_valid_w   ? S_DFS_VISIT	  : S_INPUT_Y;  // Wait to get first L vector
+        S_INPUT_R0            : next_state = input_R_valid_r   ? S_INPUT_R1 : S_INPUT_R0;  // Wait to get R vector
+        S_INPUT_R1            : next_state = input_R_valid_r   ? S_INPUT_R2 : S_INPUT_R1;  // Wait to get R vector
+        S_INPUT_R2            : next_state = input_R_valid_r   ? S_INPUT_R3 : S_INPUT_R2;  // Wait to get R vector
+        S_INPUT_R3            : next_state = input_R_valid_r   ? S_INPUT_Y  : S_INPUT_R3;  // Wait to get R vector
+        S_INPUT_Y             : next_state = input_Y_valid_r   ? S_DFS_VISIT	  : S_INPUT_Y;  // Wait to get first L vector
 		S_DFS_VISIT  		  : next_state = curr_level_r == 0 ? S_DFS_TRANVERSE_DONE: S_DFS_ENTRY;  
 		S_DFS_ENTRY           : next_state = checking_r[curr_level_r][3] ? S_DFS_VISIT : S_DFS_COMPUTE;  
 		S_DFS_COMPUTE         : next_state = compute_distance_done_w ? S_DFS_COMPARE : S_DFS_COMPUTE;

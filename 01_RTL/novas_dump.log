@@ -151,7 +151,7 @@ PERL_MB_OPT=--install_base /home/MingKe/perl5
 SSH_TTY=/dev/pts/5
 LC_ALL=C
 SG_HTML_BROWSER=/usr/bin/mozilla
-SNPS_VCS_INTERNAL_ROOT_PID=2425858
+SNPS_VCS_INTERNAL_ROOT_PID=3247596
 QT_GRAPHICSSYSTEM_CHECKED=1
 USER=MingKe
 GROUP=DCSLab
@@ -166,7 +166,7 @@ VCS_MODE_FLAG=64
 MAIL=/var/spool/mail/MingKe
 PATH=.:/usr/cad/synopsys/vcs/cur/bin:/usr/cad/synopsys/vcs/cur/linux/bin:/usr/cad/synopsys/vcs/cur/linux/util:/usr/cad/synopsys/vcs/cur/linux/flexlm:/usr/bin/X11:/usr/cad/synopsys/primetime/cur/amd64/syn/bin:/usr/cad/synopsys/spyglass/cur/SPYGLASS_HOME/bin:/usr/bin/X11:/usr/cad/synopsys/coreConsultant/cur/bin:/usr/cad/synopsys/synthesis/cur/amd64/syn/bin:/usr/cad/synopsys/lc/cur/bin:/usr/cad/synopsys/verdi/cur/bin:/usr/cad/synopsys/verdi/cur/nLint/bin:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/bin/64bit:/usr/cad/cadence/INNOVUS/INNOVUS_20.10.000/tools/bin:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Vivado/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/tools/Xilinx/DocNav:/usr/lib64/qt-3.3/bin:/home/MingKe/perl5/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/MingKe/.local/bin:/home/MingKe/bin
 XILINX_VITIS=/tools/Xilinx/Vitis/2023.2
-SNPS_VCS_INTERNAL_CURR_PID=2425858
+SNPS_VCS_INTERNAL_CURR_PID=3247596
 PWD=/home/MingKe/NTU_DCIC_2024/01_RTL
 VCS_HOME=/usr/cad/synopsys/vcs/cur
 SNPS_VCS_INTERNAL_MEMPRELOAD_USE_LIBC=1
@@ -183,7 +183,7 @@ LM_LICENSE_FILE=26585@lshc:5280@lshc
 PRIMETIME=/usr/cad/synopsys/primetime/cur
 HISTCONTROL=ignoredups
 VCS_ARG_ADDED_FOR_TMP=1
-SNPS_VCS_TMPDIR=/tmp/vcs_20241218182644_2425858
+SNPS_VCS_TMPDIR=/tmp/vcs_20241219043608_3247596
 PERL_HOMEDIR=1
 RISCV=/home/MingKe/lab/riscv
 SHLVL=4
@@ -195,7 +195,7 @@ VENDOR=unknown
 LOGNAME=MingKe
 MACHTYPE=x86_64
 QTLIB=/usr/lib64/qt-3.3/lib
-SNPS_VCS_INTERNAL_ROOT_START_TIME=1734546404.732499468
+SNPS_VCS_INTERNAL_ROOT_START_TIME=1734582968.984568720
 SSH_CONNECTION=192.168.10.5 61045 192.168.1.201 30101
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 SHLIB_PATH=/usr/cad/synopsys/verdi/cur/etc/lib/libstdc++/LINUX64/
@@ -217,8 +217,8 @@ Runtime command line arguments:
 argv[0]=simv
 argv[1]=+define+PERIOD=5
 218 profile - 100
-          CPU/Mem usage: 0.080 sys,  0.280 user,  256.63M mem
-219 Elapsed time:    0:00:09    Thu Dec 19 02:27:16 2024
+          CPU/Mem usage: 0.030 sys,  0.180 user,  256.59M mem
+219 Elapsed time:    0:00:08    Thu Dec 19 12:36:40 2024
 220 User CPU time used: 0 seconds
 221 System CPU time used: 0 seconds
 222 pliAppInit
@@ -250,55 +250,55 @@ argv[1]=+define+PERIOD=5
 248 *Verdi* : Enable +mda dumping.
 249 *Verdi* : End of traversing.
 250 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.100 sys,  0.280 user,  356.18M mem
-                   incr: 0.000 sys,  0.000 user,  7.22M mem
-                   accu: 0.000 sys,  0.000 user,  7.22M mem
-              accu incr: 0.000 sys,  0.000 user,  7.22M mem
+          CPU/Mem usage: 0.030 sys,  0.190 user,  356.14M mem
+                   incr: 0.000 sys,  0.010 user,  7.22M mem
+                   accu: 0.000 sys,  0.010 user,  7.22M mem
+              accu incr: 0.000 sys,  0.010 user,  7.22M mem
 
-          Count usage: 246 var,  237 idcode,  92 callback
-                 incr: 246 var,  237 idcode,  92 callback
-                 accu: 246 var,  237 idcode,  92 callback
-            accu incr: 246 var,  237 idcode,  92 callback
-251 Elapsed time:    0:00:09    Thu Dec 19 02:27:16 2024
+          Count usage: 267 var,  245 idcode,  113 callback
+                 incr: 267 var,  245 idcode,  113 callback
+                 accu: 267 var,  245 idcode,  113 callback
+            accu incr: 267 var,  245 idcode,  113 callback
+251 Elapsed time:    0:00:09    Thu Dec 19 12:36:41 2024
 252 User CPU time used: 0 seconds
 253 System CPU time used: 0 seconds
 254 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.100 sys,  0.290 user,  357.23M mem
-                   incr: 0.000 sys,  0.010 user,  1.05M mem
+          CPU/Mem usage: 0.030 sys,  0.190 user,  357.20M mem
+                   incr: 0.000 sys,  0.000 user,  1.05M mem
                    accu: 0.000 sys,  0.010 user,  8.27M mem
-              accu incr: 0.000 sys,  0.010 user,  1.05M mem
+              accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 246 var,  237 idcode,  92 callback
+          Count usage: 267 var,  245 idcode,  113 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 246 var,  237 idcode,  92 callback
+                 accu: 267 var,  245 idcode,  113 callback
             accu incr: 0 var,  0 idcode,  0 callback
-255 Elapsed time:    0:00:09    Thu Dec 19 02:27:16 2024
+255 Elapsed time:    0:00:09    Thu Dec 19 12:36:41 2024
 256 User CPU time used: 0 seconds
 257 System CPU time used: 0 seconds
-258 End of simulation at 19826000
-259 Memory usage: 434.848 M
-260 Maximum resident set size: 82 MB
-261 Hard page faults: 3
-262 Soft page faults: 31181
-263 Elapsed time:    0:00:09    Thu Dec 19 02:27:16 2024
+258 End of simulation at 22237500
+259 Memory usage: 435.864 M
+260 Maximum resident set size: 85 MB
+261 Hard page faults: 2
+262 Soft page faults: 28729
+263 Elapsed time:    0:00:09    Thu Dec 19 12:36:41 2024
 264 User CPU time used: 0 seconds
 265 System CPU time used: 0 seconds
 266 Begin FSDB profile info:
-267 FSDB Writer : bc1(146103) bcn(478536) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.039861) io wait(0.000000) theadpool wait(0.000000)
+267 FSDB Writer : bc1(117417) bcn(621764) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.036806) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 268 End FSDB profile info
-269 FSDB closed. Name: MIMO_detector.fsdb Size: 193975
+269 FSDB closed. Name: MIMO_detector.fsdb Size: 207229
 270 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-271                      - BlockUsed:6 Acquire:703797 BufferUsed:9219031
-272                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:4
-273                      - MainProducerTime:0.577027968 TotalConsumerTime:0.063314301
-274                      - ElapsedTime:0.246303000
-275 Producer   0 profile - BlockUsed:6 Acquire:703797 BufferUsed:9219031
-276 Consumer   0 profile - Affinity:-1 CPUTime:0.063314301 LifeTime:0.111198404 (0.57%)
-277                      - BlockUsed:6 Acquire:703797 BufferUsed:9219031
+271                      - BlockUsed:8 Acquire:827964 BufferUsed:12908421
+272                      - Flush:3 Expand:0 ProducerWait:0 ConsumerWait:6
+273                      - MainProducerTime:0.371194144 TotalConsumerTime:0.040945147
+274                      - ElapsedTime:0.296721000
+275 Producer   0 profile - BlockUsed:8 Acquire:827964 BufferUsed:12908421
+276 Consumer   0 profile - Affinity:-1 CPUTime:0.040945147 LifeTime:0.091750337 (0.45%)
+277                      - BlockUsed:8 Acquire:827964 BufferUsed:12908421
 278 SimExit
-279 Elapsed time:    0:00:10    Thu Dec 19 02:27:17 2024
+279 Elapsed time:    0:00:09    Thu Dec 19 12:36:41 2024
 280 User CPU time used: 0 seconds
 281 System CPU time used: 0 seconds
 282 Sim process exit

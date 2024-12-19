@@ -51,8 +51,8 @@ dw_foundation.sldb
 set default_schematic_options {-size infinite}
 -size infinite
 # Import Design
-set DESIGN "ed25519"
-ed25519
+set DESIGN "MIMO_detector"
+MIMO_detector
 set hdlin_translate_off_skip_text "TRUE"
 Information: Variable 'hdlin_translate_off_skip_text' is obsolete and is being ignored. (INFO-100)
 TRUE
@@ -79,319 +79,289 @@ Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
 Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
   Loading link library 'slow'
   Loading link library 'gtech'
-Loading sverilog file '/home/MingKe/NTU_CVSD2024/02_SYN/flist.sv'
+Loading sverilog file '/home/MingKe/NTU_DCIC_2024/02_SYN/flist.sv'
 Detecting input file type automatically (-rtl or -netlist).
 Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
-Compiling source file /home/MingKe/NTU_CVSD2024/02_SYN/flist.sv
-Opening include file ../01_RTL/ed25519.v
-Opening include file ../01_RTL/modular_mult.v
-Opening include file ../01_RTL/modular_add_sub.v
+Compiling source file /home/MingKe/NTU_DCIC_2024/02_SYN/flist.sv
+Opening include file ../01_RTL/MIMO_detector.v
+Opening include file ../01_RTL/complex_multiply.v
 
-Statistics for case statements in always block at line 155 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 139 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           156            |    auto/auto     |
+|           140            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 308 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 148 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           311            |    auto/auto     |
+|           149            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 411 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 169 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           412            |    auto/auto     |
+|           171            |    auto/auto     |
+|           179            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 419 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 189 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           421            |    auto/auto     |
+|           191            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 516 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 258 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           520            |    auto/auto     |
+|           260            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 563 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 306 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           565            |    auto/auto     |
+|           307            |    auto/auto     |
+|           313            |    auto/auto     |
+|           319            |    auto/auto     |
+|           325            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 681 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 335 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           682            |    auto/auto     |
+|           336            |    auto/auto     |
+|           343            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 689 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 365 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           691            |    auto/auto     |
+|           366            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 830 in file
-	'../01_RTL/ed25519.v'
+Statistics for case statements in always block at line 425 in file
+	'../01_RTL/MIMO_detector.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           834            |    auto/auto     |
-===============================================
-
-Statistics for case statements in always block at line 1025 in file
-	'../01_RTL/ed25519.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|           1026           |    auto/auto     |
-===============================================
-
-Statistics for case statements in always block at line 1041 in file
-	'../01_RTL/ed25519.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|           1042           |    auto/auto     |
-===============================================
-
-Statistics for case statements in always block at line 1061 in file
-	'../01_RTL/ed25519.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|           1067           |    auto/auto     |
-===============================================
-
-Statistics for case statements in always block at line 1075 in file
-	'../01_RTL/ed25519.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|           1076           |    auto/auto     |
+|           426            |    auto/auto     |
 ===============================================
 
 Inferred memory devices in process
-	in routine ed25519 line 75 in file
-		'../01_RTL/ed25519.v'.
+	in routine MIMO_detector line 124 in file
+		'../01_RTL/MIMO_detector.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  m_reg_rden_r_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|    in_data_r_reg    | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|   R_buffer_r_reg    | Flip-flop |  512  |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine ed25519 line 155 in file
-		'../01_RTL/ed25519.v'.
+	in routine MIMO_detector line 131 in file
+		'../01_RTL/MIMO_detector.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-| modmult_i_valid_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|  modadd_a_in_r_reg  | Flip-flop |  255  |  Y  | N  | N  | N  | N  | N  | N  |
-|  modadd_b_in_r_reg  | Flip-flop |  255  |  Y  | N  | N  | N  | N  | N  | N  |
-| modmult_a_in_r_reg  | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
-| modmult_b_in_r_reg  | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
-|   modadd_inst_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-| modadd_i_valid_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   Y_buffer_r_reg    | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|    o_data_r_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine ed25519 line 279 in file
-		'../01_RTL/ed25519.v'.
+	in routine MIMO_detector line 389 in file
+		'../01_RTL/MIMO_detector.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|     round_r_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   curr_state_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine ed25519 line 1025 in file
-		'../01_RTL/ed25519.v'.
+	in routine MIMO_detector line 397 in file
+		'../01_RTL/MIMO_detector.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|   data_buf_r_reg    | Flip-flop |  768  |  Y  | N  | N  | N  | N  | N  | N  |
+|  curr_level_r_reg   | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine ed25519 line 1061 in file
-		'../01_RTL/ed25519.v'.
+	in routine MIMO_detector line 403 in file
+		'../01_RTL/MIMO_detector.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|  curr_s_state_reg   | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
-|   curr_state_reg    | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|   checking_r_reg    | Flip-flop |  20   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine ed25519 line 1075 in file
-		'../01_RTL/ed25519.v'.
+	in routine MIMO_detector line 415 in file
+		'../01_RTL/MIMO_detector.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|       D_r_reg       | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
-|       X_r_reg       | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
-|       Y_r_reg       | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
-|       Z_r_reg       | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
-|       A_r_reg       | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
-|       B_r_reg       | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
-|       C_r_reg       | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
+| curr_distance_r_reg | Flip-flop |  85   |  Y  | N  | Y  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine ed25519 line 1182 in file
-		'../01_RTL/ed25519.v'.
+	in routine MIMO_detector line 425 in file
+		'../01_RTL/MIMO_detector.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|   generic_cnt_reg   | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
-===============================================================================
-
-Statistics for case statements in always block at line 47 in file
-	'../01_RTL/modular_mult.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|            48            |    auto/auto     |
-===============================================
-
-Statistics for case statements in always block at line 72 in file
-	'../01_RTL/modular_mult.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|            73            |    auto/auto     |
-===============================================
-
-Statistics for case statements in always block at line 102 in file
-	'../01_RTL/modular_mult.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|           103            |    auto/auto     |
-===============================================
-
-Statistics for case statements in always block at line 112 in file
-	'../01_RTL/modular_mult.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|           113            |    auto/auto     |
-===============================================
-
-Inferred memory devices in process
-	in routine modular_mult line 112 in file
-		'../01_RTL/modular_mult.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-|       sum_reg       | Flip-flop |  385  |  Y  | N  | N  | N  | N  | N  | N  |
+| compute_start_r_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      R0_r_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      R1_r_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      R2_r_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      R3_r_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|     y_hat_r_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+| best_distance_r_reg | Flip-flop |  17   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 
 Inferred memory devices in process
-	in routine modular_mult line 127 in file
-		'../01_RTL/modular_mult.v'.
+	in routine MIMO_detector line 439 in file
+		'../01_RTL/MIMO_detector.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|   curr_state_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|      s3_r_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      s0_r_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      s1_r_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|      s2_r_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
+Statistics for MUX_OPs
+=======================================================
+| block name/line   | Inputs | Outputs | # sel inputs |
+=======================================================
+| MIMO_detector/161 |   8    |    3    |      3       |
+| MIMO_detector/161 |   8    |    3    |      3       |
+| MIMO_detector/161 |   8    |    3    |      3       |
+| MIMO_detector/161 |   8    |    3    |      3       |
+| MIMO_detector/308 |   8    |   32    |      3       |
+| MIMO_detector/314 |   8    |   32    |      3       |
+| MIMO_detector/320 |   8    |   32    |      3       |
+| MIMO_detector/326 |   8    |   32    |      3       |
+| MIMO_detector/338 |   4    |   32    |      2       |
+| MIMO_detector/339 |   4    |   32    |      2       |
+| MIMO_detector/340 |   4    |   32    |      2       |
+| MIMO_detector/341 |   4    |   32    |      2       |
+=======================================================
+Warning:  ../01_RTL/complex_multiply.v:27: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:31: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:34: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:36: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:45: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:46: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:47: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:48: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:50: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:51: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:52: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:53: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:61: signed to unsigned conversion occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:62: signed to unsigned conversion occurs. (VER-318)
 
 Inferred memory devices in process
-	in routine modular_mult line 135 in file
-		'../01_RTL/modular_mult.v'.
+	in routine complex_multiply line 60 in file
+		'../01_RTL/complex_multiply.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|    res_out_r_reg    | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
+|  o_real_data_r_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|  o_imag_data_r_reg  | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    o_valid_r_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|    mult_ac_r_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    mult_bd_r_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    mult_ad_r_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|    mult_bc_r_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
-
-Statistics for case statements in always block at line 43 in file
-	'../01_RTL/modular_add_sub.v'
-===============================================
-|           Line           |  full/ parallel  |
-===============================================
-|            44            |    auto/auto     |
-===============================================
-
-Inferred memory devices in process
-	in routine modular_add_sub line 63 in file
-		'../01_RTL/modular_add_sub.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-|      state_reg      | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
-|       a_r_reg       | Flip-flop |  255  |  Y  | N  | N  | N  | N  | N  | N  |
-|       b_r_reg       | Flip-flop |  255  |  Y  | N  | N  | N  | N  | N  | N  |
-===============================================================================
+Warning:  ../01_RTL/complex_multiply.v:92: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:93: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:94: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:95: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:97: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:98: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:99: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:100: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:111: signed to unsigned part selection occurs. (VER-318)
 
 Inferred memory devices in process
-	in routine modular_add_sub line 72 in file
-		'../01_RTL/modular_add_sub.v'.
+	in routine accum line 110 in file
+		'../01_RTL/complex_multiply.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
-|        C_reg        | Flip-flop |  256  |  Y  | N  | N  | N  | N  | N  | N  |
+|    o_data_r_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    o_valid_r_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Warning:  ../01_RTL/complex_multiply.v:135: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:136: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:138: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:139: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/complex_multiply.v:151: signed to unsigned part selection occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine PED line 150 in file
+		'../01_RTL/complex_multiply.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    o_data_r_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    o_valid_r_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
-Current design is now '/home/MingKe/NTU_CVSD2024/02_SYN/ed25519.db:ed25519'
-Loaded 6 designs.
-Current design is 'ed25519'.
-ed25519 modular_mult multiplier_64x64 multiplier_128x128 multiplier_256x256 modular_add_sub
+Current design is now '/home/MingKe/NTU_DCIC_2024/02_SYN/MIMO_detector.db:MIMO_detector'
+Loaded 4 designs.
+Current design is 'MIMO_detector'.
+MIMO_detector complex_multiply accum PED
 current_design [get_designs $DESIGN]
-Current design is 'ed25519'.
-{ed25519}
+Current design is 'MIMO_detector'.
+{MIMO_detector}
 link
 
-  Linking design 'ed25519'
+  Linking design 'MIMO_detector'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  * (6 designs)               /home/MingKe/NTU_CVSD2024/02_SYN/ed25519.db, etc
+  * (4 designs)               /home/MingKe/NTU_DCIC_2024/02_SYN/MIMO_detector.db, etc
   slow (library)              /home/MingKe/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
   dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
 
 1
-source -echo -verbose ./ed25519_dc.sdc
+source -echo -verbose ./MIMO_detector.sdc
 # operating conditions and boundary conditions #
-set cycle  5.1        ;#clock period defined by designer
-5.1
-create_clock -period $cycle [get_ports  i_clk]
+set cycle  6        ;#clock period defined by designer
+6
+create_clock -period $cycle [get_ports  Clk]
 1
-set_dont_touch_network      [get_clocks i_clk]
+set_dont_touch_network      [get_clocks Clk]
 1
-set_fix_hold                [get_clocks i_clk]
+set_fix_hold                [get_clocks Clk]
 1
-set_ideal_network           [get_ports i_clk]
+set_ideal_network           [get_ports Clk]
 1
-set_clock_uncertainty  0.2 [get_clocks i_clk]
+set_clock_uncertainty  0.3 [get_clocks Clk]
 1
-set_clock_latency      0.5  [get_clocks i_clk]
+set_clock_latency      0.5  [get_clocks Clk]
 1
-set_input_delay  1      -clock i_clk [remove_from_collection [all_inputs] [get_ports i_clk]]
+set_input_delay  3      -clock Clk [remove_from_collection [all_inputs] [get_ports Clk]]
 1
-set_output_delay 1      -clock i_clk [all_outputs] 
+set_output_delay 3      -clock Clk [all_outputs] 
 1
 set_load         1     [all_outputs]
 1
@@ -405,13 +375,14 @@ set_max_fanout 20 [all_inputs]
 1
 # Compile Design
 current_design [get_designs ${DESIGN}]
-Current design is 'ed25519'.
-{ed25519}
+Current design is 'MIMO_detector'.
+{MIMO_detector}
 check_design > Report/check_design.txt
 check_timing > Report/check_timing.txt
 set high_fanout_net_threshold 0
 0
 uniquify
+Information: Uniquified 4 instances of design 'complex_multiply'. (OPT-1056)
 1
 set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
 1
@@ -437,55 +408,124 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
 Information: Retiming is enabled. SVF file must be used for formal verification. (OPT-1210)
 
-Information: There are 4 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 194 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
-  Simplifying Design 'ed25519'
+  Simplifying Design 'MIMO_detector'
+Information: The register 'complex_multiply_inst1/o_valid_r_reg[1]' will be removed. (OPT-1207)
+Information: The register 'complex_multiply_inst2/o_valid_r_reg[1]' will be removed. (OPT-1207)
+Information: The register 'complex_multiply_inst0/o_valid_r_reg[1]' will be removed. (OPT-1207)
 
 Loaded alib file './alib-52/slow.db.alib'
   Building model 'DW01_NAND2'
-Information: Ungrouping 0 of 4 hierarchies before Pass 1 (OPT-775)
+Information: Ungrouping hierarchy complex_multiply_inst0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy accum_inst0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy PED_inst before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy complex_multiply_inst3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy complex_multiply_inst2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy complex_multiply_inst1 before Pass 1 (OPT-776)
+Information: Ungrouping 6 of 7 hierarchies before Pass 1 (OPT-775)
 Information: State dependent leakage is now switched from on to off.
 
   Beginning Pass 1 Mapping
   ------------------------
-......
-  Processing 'ed25519'
-Information: Added key list 'DesignWare' to design 'ed25519'. (DDB-72)
- Implement Synthetic for 'ed25519'.
-  Processing 'modular_mult'
- Implement Synthetic for 'modular_mult'.
-  Processing 'modular_add_sub'
- Implement Synthetic for 'modular_add_sub'.
-  Processing 'multiplier_128x128'
- Implement Synthetic for 'multiplier_128x128'.
+  Processing 'MIMO_detector'
+Information: Added key list 'DesignWare' to design 'MIMO_detector'. (DDB-72)
+Information: The register 'checking_r_reg[4][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'checking_r_reg[4][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'checking_r_reg[4][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'checking_r_reg[4][3]' is a constant and will be removed. (OPT-1206)
+Information: In design 'MIMO_detector', the register 'complex_multiply_inst2/o_valid_r_reg[0]' is removed because it is merged to 'complex_multiply_inst1/o_valid_r_reg[0]'. (OPT-1215)
+Information: In design 'MIMO_detector', the register 'complex_multiply_inst3/o_valid_r_reg[0]' is removed because it is merged to 'complex_multiply_inst1/o_valid_r_reg[0]'. (OPT-1215)
+Information: In design 'MIMO_detector', the register 'complex_multiply_inst0/o_valid_r_reg[0]' is removed because it is merged to 'complex_multiply_inst1/o_valid_r_reg[0]'. (OPT-1215)
+ Implement Synthetic for 'MIMO_detector'.
 
   Updating timing information
 Information: Updating design information... (UID-85)
 Information: The library cell 'HOLDX1' in the library 'slow' is not characterized for internal power. (PWR-536)
 Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'curr_distance_r_reg[4][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_level_r_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 's3_r_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 's3_r_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 's3_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 's3_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 's1_r_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 's1_r_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 's1_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 's1_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 's2_r_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 's2_r_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 's2_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 's2_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 's0_r_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 's0_r_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 's0_r_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 's0_r_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'curr_distance_r_reg[4][16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'Y_buffer_r_reg[0]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[1]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[2]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[3]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[4]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[5]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[6]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[7]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[8]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[9]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[10]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[11]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[12]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[13]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[14]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[15]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[16]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[17]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[18]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[19]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[20]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[21]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[22]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[23]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[24]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[25]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[26]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[27]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[28]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[29]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[30]' will be removed. (OPT-1207)
+Information: The register 'Y_buffer_r_reg[31]' will be removed. (OPT-1207)
 
   Beginning Mapping Optimizations  (Ultra High effort)
   -------------------------------
-.
-Information: Ungrouping hierarchy modular_add_sub_inst 'modular_add_sub' #insts = 1815. (OPT-777)
-Information: Ungrouping hierarchy modular_mult_inst 'modular_mult' #insts = 2205. (OPT-777)
-Information: Ungrouping hierarchy modular_mult_inst/multiplier_128x128_inst 'multiplier_128x128' #insts = 0. (OPT-777)
   Mapping Optimization (Phase 1)
   Mapping Optimization (Phase 2)
-  Mapping Optimization (Phase 3)
-  Mapping Optimization (Phase 4)
 
                                   TOTAL                                                            
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:07:11 2158473.2      0.58    1110.9   52229.5                           2376259584.0000      0.00  
-    0:07:16 2156387.1      0.92    1208.0   52219.0                           2374360064.0000      0.00  
+    0:00:45  222418.8      0.00       0.0    9140.3                           210966672.0000      0.00  
+    0:00:46  218234.7      0.00       0.0    9140.3                           207761312.0000      0.00  
 
   Beginning Constant Register Removal
   -----------------------------------
-    0:07:27 2169998.6      0.81    1233.1   47855.0                           2392413696.0000      0.00  
-    0:07:30 2169998.6      0.81    1233.1   47855.0                           2392413696.0000      0.00  
+    0:00:47  218348.4      0.00       0.0    9140.3                           207955600.0000      0.00  
+    0:00:47  214626.0      0.00       0.0    9140.3                           204585792.0000      0.00  
 
   Beginning Global Optimizations
   ------------------------------
@@ -528,46 +568,37 @@ Information: Ungrouping hierarchy modular_mult_inst/multiplier_128x128_inst 'mul
 
   Beginning Delay Optimization
   ----------------------------
-    0:08:19 1019826.8      1.70    1007.6   61025.9                           909571648.0000      0.00  
-    0:08:49 1029442.6      1.01     698.0   61025.9                           923037888.0000      0.00  
-    0:08:49 1029442.6      1.01     698.0   61025.9                           923037888.0000      0.00  
-    0:08:50 1028953.7      1.01     702.2   61025.9                           922261184.0000      0.00  
-Information: The register 'A_r_reg[255]' is a constant and will be removed. (OPT-1206)
-Information: The register 'B_r_reg[255]' is a constant and will be removed. (OPT-1206)
-Information: The register 'Z_r_reg[255]' is a constant and will be removed. (OPT-1206)
-Information: The register 'Y_r_reg[255]' is a constant and will be removed. (OPT-1206)
-Information: The register 'X_r_reg[255]' is a constant and will be removed. (OPT-1206)
-    0:09:05 1019497.5      1.01     699.6   61025.9                           912952256.0000      0.00  
-    0:09:11 1018390.8      1.01     700.0   61025.9                           912514816.0000      0.00  
+    0:00:52  101175.2      0.48      11.5    9149.9                           80462184.0000      0.00  
+    0:00:53  102753.8      0.00       0.0    9150.8                           82944176.0000      0.00  
+    0:00:53  102753.8      0.00       0.0    9150.8                           82944176.0000      0.00  
+    0:00:53  102730.0      0.00       0.0    9150.8                           82926672.0000      0.00  
+    0:00:54  102718.2      0.00       0.0    9150.8                           82909600.0000      0.00  
+    0:00:54  102718.2      0.00       0.0    9150.8                           82909600.0000      0.00  
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:09:34 1017567.5      1.01     699.2   61022.8                           909948288.0000      0.00  
-    0:09:36 1015187.8      1.01     700.4   61022.8                           906104320.0000      0.00  
-    0:09:42 1009798.5      1.01     692.7   61022.8                           899721280.0000      0.00  
-    0:09:47 1002715.3      1.01     712.3   61022.8                           891773952.0000      0.00  
-    0:09:49 1001087.5      1.00     707.5   61022.8                           890625088.0000      0.00  
-    0:09:54 1000727.6      0.99     679.1   61022.8                           890049344.0000      0.00  
-    0:09:54 1000727.6      0.99     679.1   61022.8                           890049344.0000      0.00  
-    0:10:01 1000065.7      0.99     648.8   61019.0                           881302912.0000      0.00  
-    0:10:01 1000065.7      0.99     648.8   61019.0                           881302912.0000      0.00  
-    0:10:16 1024472.6      0.97     657.8   61019.0                           910685824.0000      0.00  
-    0:10:16 1024472.6      0.97     657.8   61019.0                           910685824.0000      0.00  
-    0:10:40 1041565.4      0.77     515.4   61019.0                           934242368.0000      0.00  
-    0:10:40 1041565.4      0.77     515.4   61019.0                           934242368.0000      0.00  
-    0:10:59 1068700.0      0.76     491.9   61019.0                           966455296.0000      0.00  
-    0:10:59 1068700.0      0.76     491.9   61019.0                           966455296.0000      0.00  
-    0:13:18 1159161.3      0.16      53.9   61047.1                           1078302976.0000      0.00  
-    0:13:18 1159161.3      0.16      53.9   61047.1                           1078302976.0000      0.00  
-    0:13:37 1177238.6      0.21      77.1   61047.1                           1100422912.0000      0.00  
-    0:13:37 1177238.6      0.21      77.1   61047.1                           1100422912.0000      0.00  
-    0:14:33 1220613.9      0.00       0.0   61057.7                           1155642240.0000      0.00  
-    0:14:33 1220613.9      0.00       0.0   61057.7                           1155642240.0000      0.00  
-    0:14:33 1220613.9      0.00       0.0   61057.7                           1155642240.0000      0.00  
-    0:14:33 1220613.9      0.00       0.0   61057.7                           1155642240.0000      0.00  
-    0:14:33 1220613.9      0.00       0.0   61057.7                           1155642240.0000      0.00  
-    0:14:33 1220613.9      0.00       0.0   61057.7                           1155642240.0000      0.00  
-    0:14:33 1220613.9      0.00       0.0   61057.7                           1155642240.0000      0.00  
+    0:00:58  102231.0      0.00       0.0    9133.4                           81684800.0000      0.00  
+    0:00:58  102231.0      0.00       0.0    9133.4                           81684800.0000      0.00  
+    0:00:58  102231.0      0.00       0.0    9133.4                           81684800.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
 
 
   Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
@@ -577,12 +608,12 @@ Information: The register 'X_r_reg[255]' is a constant and will be removed. (OPT
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:14:33 1220613.9      0.00       0.0   61057.7                           1155642240.0000      0.00  
+    0:01:00  102343.0      0.00       0.0    9102.6                           79674664.0000      0.00  
   Global Optimization (Phase 32)
   Global Optimization (Phase 33)
   Global Optimization (Phase 34)
-    0:14:35 1221545.8      0.00       0.0       0.0                           1156301696.0000      0.00  
-    0:14:35 1221545.8      0.00       0.0       0.0                           1156301696.0000      0.00  
+    0:01:00  102433.0      0.00       0.0       0.0                           79703040.0000      0.00  
+    0:01:00  102433.0      0.00       0.0       0.0                           79703040.0000      0.00  
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -592,7 +623,7 @@ Information: The register 'X_r_reg[255]' is a constant and will be removed. (OPT
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:14:35 1221545.8      0.00       0.0       0.0                           1156301696.0000      0.00  
+    0:01:00  102433.0      0.00       0.0       0.0                           79703040.0000      0.00  
   Global Optimization (Phase 35)
   Global Optimization (Phase 36)
   Global Optimization (Phase 37)
@@ -607,52 +638,45 @@ Information: The register 'X_r_reg[255]' is a constant and will be removed. (OPT
   Global Optimization (Phase 46)
   Global Optimization (Phase 47)
   Global Optimization (Phase 48)
-  Global Optimization (Phase 49)
-  Global Optimization (Phase 50)
-    0:15:16 1150572.4      0.24     243.5    1750.6                           1070324672.0000      0.00  
-    0:15:35 1168121.8      0.23     183.8    1762.7                           1089504128.0000      0.00  
-    0:15:35 1168121.8      0.23     183.8    1762.7                           1089504128.0000      0.00  
-    0:15:51 1120129.5      0.19      58.4    1750.6                           1028819968.0000      0.00  
-    0:15:52 1120129.5      0.19      58.4    1750.6                           1028819968.0000      0.00  
-    0:16:11 1140902.3      0.17      47.6    1762.8                           1052006144.0000      0.00  
-    0:16:11 1140902.3      0.17      47.6    1762.8                           1052006144.0000      0.00  
-    0:16:23 1156968.2      0.05       0.2    1767.4                           1074391680.0000      0.00  
-    0:16:23 1156968.2      0.05       0.2    1767.4                           1074391680.0000      0.00  
-    0:16:44 1173020.5      0.05       3.2    1767.4                           1092836480.0000      0.00  
-    0:16:44 1173020.5      0.05       3.2    1767.4                           1092836480.0000      0.00  
-    0:16:48 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:48 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:48 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:49 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:49 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:49 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:49 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:49 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:49 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:49 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:16:49 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
+    0:01:04  100795.0      0.00       0.0       0.0                           74436400.0000      0.00  
+    0:01:04  100795.0      0.00       0.0       0.0                           74436400.0000      0.00  
+    0:01:04  100795.0      0.00       0.0       0.0                           74436400.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:05  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
 
                                   TOTAL                                                            
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:16:51 1173382.1      0.00       0.0    1767.4                           1093150592.0000      0.00  
-    0:17:03 1134722.1      0.00       0.0    1750.9                           1040405248.0000      0.00  
-    0:17:03 1134723.8      0.00       0.0    1750.9                           1040406528.0000      0.00  
-    0:17:03 1134723.8      0.00       0.0    1750.9                           1040406528.0000      0.00  
-    0:17:21 1091762.6      0.01       0.1    1750.9                           989393472.0000      0.00  
-    0:17:26 1089096.0      0.01       0.2    1728.6                           986749184.0000      0.00  
-    0:17:30 1087060.8      0.01       0.3    1720.8                           984601472.0000      0.00  
-    0:17:35 1085280.2      0.01       0.3    1718.1                           982083840.0000      0.00  
-    0:17:38 1083005.7      0.01       0.2    1718.1                           978605760.0000      0.00  
-    0:17:42 1081191.2      0.00       0.0       0.0                           976296192.0000      0.00  
-    0:17:42 1081191.2      0.00       0.0       0.0                           976296192.0000      0.00  
-    0:17:42 1081191.2      0.00       0.0       0.0                           976296192.0000      0.00  
-    0:17:42 1081191.2      0.00       0.0       0.0                           976296192.0000      0.00  
-    0:17:42 1081191.2      0.00       0.0       0.0                           976296192.0000      0.00  
-    0:17:42 1081191.2      0.00       0.0       0.0                           976296192.0000      0.00  
-    0:18:10 1036558.0      0.00       0.0       4.9                           910759680.0000      0.00  
-    0:18:11 1036334.0      0.00       0.0       4.9                           910635200.0000      0.00  
+    0:01:06  100767.8      0.00       0.0       0.0                           74362264.0000      0.00  
+    0:01:07  100384.2      0.00       0.0       0.0                           74507416.0000      0.00  
+    0:01:07  100384.2      0.00       0.0       0.0                           74507416.0000      0.00  
+    0:01:07  100384.2      0.00       0.0       0.0                           74507416.0000      0.00  
+    0:01:08  100489.5      0.00       0.0       0.0                           74280072.0000      0.00  
+    0:01:10  100433.5      0.00       0.0       0.0                           73912520.0000      0.00  
+    0:01:10  100433.5      0.00       0.0       0.0                           73912520.0000      0.00  
+    0:01:10  100433.5      0.00       0.0       0.0                           73912520.0000      0.00  
+    0:01:10  100433.5      0.00       0.0       0.0                           73912520.0000      0.00  
+    0:01:10  100433.5      0.00       0.0       0.0                           73912520.0000      0.00  
+    0:01:10  100433.5      0.00       0.0       0.0                           73912520.0000      0.00  
+    0:01:11  100122.8      0.00       0.0       0.0                           74207408.0000      0.00  
 Loading db file '/home/MingKe/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
 
 
@@ -682,9 +706,8 @@ Information: The target library(s) contains cell(s), other than black boxes, tha
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:00:03 1036334.0      0.00       0.0       4.9                           910635200.0000      0.00  
-    0:01:49 1015539.1      0.00       0.0       4.9                           886062144.0000      0.00  
-    0:02:40 1009111.1      0.00       0.0       4.9                           888007360.0000      0.00  
+    0:00:02  100122.8      0.00       0.0       0.0                           74207408.0000      0.00  
+    0:00:14   98776.8      0.00       0.0       0.0                           72835472.0000      0.00  
 Loading db file '/home/MingKe/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
 
 
@@ -696,8 +719,8 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
 1
 # Report Output
 current_design [get_designs ${DESIGN}]
-Current design is 'ed25519'.
-{ed25519}
+Current design is 'MIMO_detector'.
+{MIMO_detector}
 report_timing > "./Report/${DESIGN}_syn.timing"
 report_timing -delay min -max_paths 10 > "./Report/${DESIGN}_syn.timing_min" 
 report_timing -delay max -max_paths 10 > "./Report/${DESIGN}_syn.timing_max"
@@ -705,8 +728,8 @@ report_area -hierarchy > "./Report/${DESIGN}_syn.area"
 report_clock_gating >    "./Report/${DESIGN}_syn.cg"
 # Output Design
 current_design [get_designs ${DESIGN}]
-Current design is 'ed25519'.
-{ed25519}
+Current design is 'MIMO_detector'.
+{MIMO_detector}
 set bus_inference_style {%s[%d]}
 %s[%d]
 set bus_naming_style {%s[%d]}
@@ -730,21 +753,21 @@ remove_unconnected_ports -blast_buses [get_cells -hierarchical *]
 set verilogout_higher_designs_first true
 true
 write -format ddc     -hierarchy -output "./Netlist/${DESIGN}_syn.ddc"
-Writing ddc file './Netlist/ed25519_syn.ddc'.
+Writing ddc file './Netlist/MIMO_detector_syn.ddc'.
 1
 write -format verilog -hierarchy -output "./Netlist/${DESIGN}_syn.v"
-Writing verilog file '/home/MingKe/NTU_CVSD2024/02_SYN/Netlist/ed25519_syn.v'.
+Writing verilog file '/home/MingKe/NTU_DCIC_2024/02_SYN/Netlist/MIMO_detector_syn.v'.
 1
 write_sdf -version 2.1  -context verilog -load_delay cell ./Netlist/${DESIGN}_syn.sdf
-Information: Writing timing information to file '/home/MingKe/NTU_CVSD2024/02_SYN/Netlist/ed25519_syn.sdf'. (WT-3)
+Information: Writing timing information to file '/home/MingKe/NTU_DCIC_2024/02_SYN/Netlist/MIMO_detector_syn.sdf'. (WT-3)
 1
 write_sdc  ./Netlist/${DESIGN}_syn.sdc -version 1.8
 1
 exit
 
-Memory usage for this session 675 Mbytes.
-Memory usage for this session including child processes 1162 Mbytes.
-CPU usage for this session 14087 seconds ( 3.91 hours ).
-Elapsed time for this session 1295 seconds ( 0.36 hours ).
+Memory usage for this session 380 Mbytes.
+Memory usage for this session including child processes 491 Mbytes.
+CPU usage for this session 398 seconds ( 0.11 hours ).
+Elapsed time for this session 142 seconds ( 0.04 hours ).
 
 Thank you...

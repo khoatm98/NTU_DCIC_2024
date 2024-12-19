@@ -92,14 +92,16 @@ module testbench #(
         i = 0; j = 0;
         @(posedge clk);
         while ( j <= `PAT_LEN) begin
-            @(negedge clk);
+            @(posedge clk);
 			if (out_in_ready) begin
+			#(`PERIOD / 2.0)
 				in_valid = 1'b1;
 				inst     = input_data[j][(I_WIDTH*4*2)];
 				idata_a  = input_data[j][(I_WIDTH*4*2) -1:0];
 				j = j+1;
 				//$display("o valid");
 			end else begin
+			#(`PERIOD / 2.0)
 				in_valid = 1'b0;
 			end
         end

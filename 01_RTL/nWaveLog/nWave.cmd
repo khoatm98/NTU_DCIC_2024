@@ -9516,3 +9516,1278 @@ wvZoomIn -win $_nWave1
 wvZoomIn -win $_nWave1
 wvSetCursor -win $_nWave1 1733776.633341 -snap {("G3" 9)}
 wvSetCursor -win $_nWave1 1737987.945391 -snap {("G3" 8)}
+wvSetCursor -win $_nWave1 1735130.269357 -snap {("G5" 1)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetCursor -win $_nWave1 668.244401 -snap {("G1" 1)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvSetPosition -win $_nWave1 {("G2" 13)}
+wvSetPosition -win $_nWave1 {("G2" 13)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+{/testbench/MIMO_detector_inst/R0_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/R1_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/R2_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/R3_r\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/s0_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/s1_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/s2_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/s3_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/testbench/MIMO_detector_inst/can_tranverse_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 10 11 12 13 )} 
+wvSetPosition -win $_nWave1 {("G2" 13)}
+wvSelectSignal -win $_nWave1 {( "G2" 13 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 11 )} 
+wvSetCursor -win $_nWave1 1371.659559 -snap {("G2" 11)}
+wvSetCursor -win $_nWave1 1828.879412 -snap {("G2" 10)}
+wvSetCursor -win $_nWave1 2250.928507 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 4466.686256 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 4079.807919 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 3446.734277 -snap {("G2" 11)}
+wvSetCursor -win $_nWave1 3868.783372 -snap {("G2" 12)}
+wvSetCursor -win $_nWave1 3868.783372 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 4185.320193 -snap {("G1" 5)}
+wvSelectSignal -win $_nWave1 {( "G2" 10 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 9 )} 
+wvZoomIn -win $_nWave1
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetCursor -win $_nWave1 3710.514961 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 3446.734277 -snap {("G2" 11)}
+wvSetCursor -win $_nWave1 3622.588066 -snap {("G2" 10)}
+wvSetCursor -win $_nWave1 3200.538971 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3499.490414 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3780.856477 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4361.173983 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3921.539509 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3745.685719 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3745.685719 -snap {("G2" 10)}
+wvZoomIn -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testbench"
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvGetSignalSetScope -win $_nWave1 \
+           "/testbench/MIMO_detector_inst/complex_multiply_inst3"
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvSetPosition -win $_nWave1 {("G2" 14)}
+wvSetPosition -win $_nWave1 {("G2" 14)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+{/testbench/MIMO_detector_inst/R0_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/R1_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/R2_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/R3_r\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/s0_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/s1_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/s2_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/s3_r\[31:0\]} \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/testbench/MIMO_detector_inst/can_tranverse_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 14 )} 
+wvSetPosition -win $_nWave1 {("G2" 14)}
+wvSetCursor -win $_nWave1 1266.147285 -snap {("G2" 14)}
+wvSetCursor -win $_nWave1 1442.001075 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1696.989070 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2075.074718 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2250.928507 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2479.538434 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3728.100340 -snap {("G2" 10)}
+wvSetCursor -win $_nWave1 3411.563519 -snap {("G2" 13)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvUnknownSaveResult -win $_nWave1 -clear
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 8 9 10 )} {( "G2" 1 2 3 4 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G3" 10)}
+wvSetPosition -win $_nWave1 {("G3" 2)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvSetPosition -win $_nWave1 {("G3" 3)}
+wvSetPosition -win $_nWave1 {("G3" 3)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/testbench/MIMO_detector_inst/can_tranverse_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 3 )} 
+wvSetPosition -win $_nWave1 {("G3" 3)}
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/testbench/MIMO_detector_inst/can_tranverse_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 4 )} 
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/testbench/MIMO_detector_inst/can_tranverse_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+}
+wvSelectSignal -win $_nWave1 {( "G3" 4 )} 
+wvSetPosition -win $_nWave1 {("G3" 4)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G3" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 3 4 )} 
+wvSetPosition -win $_nWave1 {("G3" 3)}
+wvSetPosition -win $_nWave1 {("G4" 0)}
+wvSetPosition -win $_nWave1 {("G6" 0)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvSelectSignal -win $_nWave1 {( "G6" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G6" 2 )} 
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1800742.805732 -snap {("G6" 2)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 1780512.585773 -snap {("G6" 2)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G3" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G3" 7 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G7" 0)}
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1690616.128519 -snap {("G6" 1)}
+wvSetCursor -win $_nWave1 1760394.912241 -snap {("G6" 1)}
+wvSetCursor -win $_nWave1 1782904.197313 -snap {("G6" 2)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 7315.517648 -snap {("G3" 9)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testbench"
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvGetSignalSetScope -win $_nWave1 \
+           "/testbench/MIMO_detector_inst/complex_multiply_inst3"
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvZoom -win $_nWave1 1565.098728 1688.196380
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1746.392599 -snap {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetCursor -win $_nWave1 1484.256590 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 1976.647201 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 2490.292083 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 2748.885713 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 2996.852208 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 3497.036051 -snap {("G1" 2)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 3497.036051 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 3489.951294 -snap {("G1" 2)}
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 3152.716861 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 3216.479674 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 3506.954711 -snap {("G1" 2)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1608.239837 -snap {("G2" 5)}
+wvGetSignalOpen -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSetCursor -win $_nWave1 1246.917230 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1254.001987 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1246.917230 -snap {("G1" 1)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvSetPosition -win $_nWave1 {("G6" 4)}
+wvSetPosition -win $_nWave1 {("G6" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/testbench/MIMO_detector_inst/can_tranverse_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G6" 3 4 )} 
+wvSetPosition -win $_nWave1 {("G6" 4)}
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/testbench/MIMO_detector_inst/can_tranverse_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G6" 5 )} 
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+{/testbench/MIMO_detector_inst/can_tranverse_w} \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G6" 5 )} 
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 2274.206994 -snap {("G6" 5)}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetCursor -win $_nWave1 2741.800956 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3244.818702 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4272.108466 -snap {("G6" 5)}
+wvSelectSignal -win $_nWave1 {( "G6" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetCursor -win $_nWave1 4810.549997 -snap {("G1" 4)}
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 
+wvSetCursor -win $_nWave1 3995.802943 -snap {("G2" 5)}
+wvSetCursor -win $_nWave1 2267.122237 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 2685.122900 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 3159.801618 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 3818.684018 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 4194.176139 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 4640.515829 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 4265.023709 -snap {("G6" 5)}
+wvSelectSignal -win $_nWave1 {( "G6" 4 )} 
+wvSetCursor -win $_nWave1 4725.532913 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 4236.684681 -snap {("G1" 5)}
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvSetCursor -win $_nWave1 3988.718186 -snap {("G1" 1)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1735.765463 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1962.477687 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave1 {( "G6" 3 )} 
+wvSetCursor -win $_nWave1 3733.666934 -snap {("G1" 5)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1990.816714 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2238.783209 -snap {("G6" 3)}
+wvSetCursor -win $_nWave1 2734.716199 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 3287.327244 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 3655.734607 -snap {("G6" 5)}
+wvSetCursor -win $_nWave1 4002.887700 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4257.938952 -snap {("G6" 5)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 544974.928058 -snap {("G6" 1)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G5" 1 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G7" 0)}
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvSetCursor -win $_nWave1 18267.002023 -snap {("G4" 1)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 1975.997815 -snap {("G6" 3)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvSetCursor -win $_nWave1 4127.639880 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2030.886643 -snap {("G2" 5)}
+wvSetCursor -win $_nWave1 1339.287408 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 757.465829 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 
+wvSetCursor -win $_nWave1 1339.287408 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1745.464737 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2239.464190 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2744.441410 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3260.396395 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3732.440317 -snap {("G1" 1)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1926573.269281 -snap {("G6" 2)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G6" 4 )} 
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 4 )} 
+wvSetCursor -win $_nWave1 1930234.820452 -snap {("G6" 2)}
+wvSetCursor -win $_nWave1 1929740.820998 -snap {("G6" 2)}
+wvSelectSignal -win $_nWave1 {( "G6" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G6" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G6" 2 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G7" 0)}
+wvSetPosition -win $_nWave1 {("G6" 4)}
+wvSetCursor -win $_nWave1 1930256.775983 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 1929806.687592 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 1930229.331569 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 1929746.309881 -snap {("G2" 4)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 1930207.376037 -snap {("G1" 6)}
+wvSetCursor -win $_nWave1 1929801.198708 -snap {("G2" 4)}
+wvSetCursor -win $_nWave1 1930262.264865 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 4303.284131 -snap {("G1" 5)}
+wvZoomIn -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 2261.419722 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1778.398034 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2063.819940 -snap {("G2" 5)}
+wvSetCursor -win $_nWave1 4094.706583 -snap {("G2" 5)}
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 
+wvSetCursor -win $_nWave1 3776.351380 -snap {("G2" 7)}
+wvSelectSignal -win $_nWave1 {( "G6" 3 )} 
+wvSetCursor -win $_nWave1 2140.664300 -snap {("G6" 2)}
+wvSetCursor -win $_nWave1 2744.441410 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 3282.351926 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 3776.351380 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 4303.284131 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 2788.352472 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 3183.552035 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 3864.173505 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 4171.550943 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 3776.351380 -snap {("G1" 5)}
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 
+wvSetCursor -win $_nWave1 2008.931112 -snap {("G2" 5)}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetCursor -win $_nWave1 1767.420268 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/i_in_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G6" 5 )} 
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/i_in_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G6" 5 )} 
+wvSetPosition -win $_nWave1 {("G6" 5)}
+wvGetSignalClose -win $_nWave1
+wvSetPosition -win $_nWave1 {("G3" 8)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetCursor -win $_nWave1 2008.931112 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 2217.508659 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2821.285769 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3216.485332 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3721.462552 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4248.395302 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3798.306911 -snap {("G2" 7)}
+wvSetCursor -win $_nWave1 4226.439771 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 5697.460367 -snap {("G3" 9)}
+wvZoomAll -win $_nWave1
+wvSetCursor -win $_nWave1 499560.350719 -snap {("G6" 1)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 36534.004047 -snap {("G6" 1)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 3337.240754 -snap {("G2" 7)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 2222.997542 -snap {("G6" 2)}
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 4226.439771 -snap {("G6" 3)}
+wvSetCursor -win $_nWave1 3754.395849 -snap {("G2" 7)}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetCursor -win $_nWave1 4303.284131 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 4775.328053 -snap {("G1" 5)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G6" 1 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testbench"
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvGetSignalSetScope -win $_nWave1 \
+           "/testbench/MIMO_detector_inst/complex_multiply_inst3"
+wvGetSignalSetScope -win $_nWave1 "/testbench/MIMO_detector_inst"
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/i_in_valid} \
+{/testbench/MIMO_detector_inst/OutputReady_r} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/i_in_valid} \
+{/testbench/MIMO_detector_inst/OutputReady_r} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetPosition -win $_nWave1 {("G3" 1)}
+wvSetPosition -win $_nWave1 {("G4" 0)}
+wvSetPosition -win $_nWave1 {("G4" 1)}
+wvSetPosition -win $_nWave1 {("G4" 2)}
+wvSetPosition -win $_nWave1 {("G5" 0)}
+wvSetPosition -win $_nWave1 {("G6" 0)}
+wvSetPosition -win $_nWave1 {("G6" 1)}
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvSetPosition -win $_nWave1 {("G6" 3)}
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvSetPosition -win $_nWave1 {("G6" 1)}
+wvSetPosition -win $_nWave1 {("G6" 0)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G6" 1)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 2085248.538669 -snap {("G6" 1)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 2077959.302284 -snap {("G6" 1)}
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1405.154002 -snap {("G6" 4)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 2063.819940 -snap {("G6" 2)}
+wvSetCursor -win $_nWave1 2107.731003 -snap {("G6" 3)}
+wvSetCursor -win $_nWave1 2656.619285 -snap {("G1" 6)}
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 1975.997815 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 4281.328599 -snap {("G6" 4)}
+wvSetCursor -win $_nWave1 4775.328053 -snap {("G2" 7)}
+wvSetCursor -win $_nWave1 4259.373068 -snap {("G1" 6)}
+wvSetCursor -win $_nWave1 3787.329145 -snap {("G1" 6)}
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 
+wvSetCursor -win $_nWave1 4215.462005 -snap {("G1" 6)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 3710.484786 -snap {("G1" 6)}
+wvSetCursor -win $_nWave1 4138.617646 -snap {("G1" 6)}
+wvSetCursor -win $_nWave1 2019.908878 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2491.952800 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3007.907785 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3501.907239 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4017.862224 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetCursor -win $_nWave1 4226.439771 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3809.284677 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4292.306365 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3897.106802 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3820.262443 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4127.639880 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3820.262443 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1965.020049 -snap {("G1" 1)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 4478.928381 -snap {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvSetCursor -win $_nWave1 1811.331330 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2272.397487 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2799.330238 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3249.418629 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3710.484786 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4292.306365 -snap {("G1" 1)}
+wvSelectStuckSignals -win $_nWave1
+wvSetCursor -win $_nWave1 3995.906693 -snap {("G6" 3)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetCursor -win $_nWave1 2755.419175 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3337.240754 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3875.151271 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4270.350834 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4786.305819 -snap {("G1" 1)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 3282.351926 -snap {("G1" 6)}
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 
+wvSetCursor -win $_nWave1 3765.373614 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4325.239662 -snap {("G1" 1)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1955974.370564 -snap {("G6" 4)}
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 1931612.513056 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 1930229.314585 -snap {("G6" 1)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 1913784.621658 -snap {("G4" 1)}
+wvSetCursor -win $_nWave1 1926914.029363 -snap {("G7" 0)}
+wvSetCursor -win $_nWave1 2634.663753 -snap {("G6" 3)}
+wvZoomIn -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testbench"
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/i_in_valid} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/OutputReady_r} \
+{/testbench/j\[31:0\]} \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G6" 2 )} 
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testbench/MIMO_detector_inst/Clk} \
+{/testbench/MIMO_detector_inst/InData\[127:0\]} \
+{/testbench/MIMO_detector_inst/i_in_valid} \
+{/testbench/MIMO_detector_inst/R_buffer_r\[3:0\]} \
+{/testbench/MIMO_detector_inst/Y_buffer_r\[127:0\]} \
+{/testbench/MIMO_detector_inst/curr_state\[3:0\]} \
+{/testbench/MIMO_detector_inst/distance_w\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/testbench/MIMO_detector_inst/compute_start_r} \
+{/testbench/MIMO_detector_inst/compute_distance_done_w} \
+{/testbench/MIMO_detector_inst/PED_inst/o_data\[31:0\]} \
+{/testbench/MIMO_detector_inst/OutputReady} \
+{/testbench/MIMO_detector_inst/input_R_valid_w} \
+{/testbench/MIMO_detector_inst/input_Y_valid_w} \
+{/testbench/MIMO_detector_inst/o_in_ready} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+{/testbench/MIMO_detector_inst/best_distance_r\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[3\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[2\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[1\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/curr_distance_r\[0\]\[16:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[4:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[3\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[2\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[1\]\[3:0\]} \
+{/testbench/MIMO_detector_inst/checking_r\[0\]\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G4" \
+{/testbench/MIMO_detector_inst/prune_w} \
+{/testbench/MIMO_detector_inst/curr_level_r\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G5" \
+}
+wvAddSignal -win $_nWave1 -group {"G6" \
+{/testbench/MIMO_detector_inst/OutputReady_r} \
+{/testbench/j\[31:0\]} \
+{/testbench/MIMO_detector_inst/o_data_r\[11:0\]} \
+{/testbench/MIMO_detector_inst/input_R_valid_r} \
+{/testbench/MIMO_detector_inst/input_Y_valid_r} \
+{/testbench/MIMO_detector_inst/InData_r\[127:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G7" \
+}
+wvSelectSignal -win $_nWave1 {( "G6" 2 )} 
+wvSetPosition -win $_nWave1 {("G6" 2)}
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G6" 2 )} 
+wvSetCursor -win $_nWave1 4456.972850 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 4303.284131 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave1 {( "G2" 7 )} 

@@ -38,7 +38,7 @@ function automatic [WIDTH-1:0] fx_mul;
 	
 endfunction
 
-reg o_valid_r;
+reg [1:0] o_valid_r;
 reg [WIDTH-1  :0] o_real_data_r;
 reg [WIDTH-1  :0] o_imag_data_r;
 
@@ -52,14 +52,23 @@ wire signed [WIDTH*2-1:0] mult_bd = fx_mul(imag_a, imag_b);          // 2 sign 2
 wire signed [WIDTH*2-1:0] mult_ad = fx_mul(real_a, imag_b);          // 2 sign 2 bit integer 30 fractional bit
 wire signed [WIDTH*2-1:0] mult_bc = fx_mul(imag_a, real_b);          // 2 sign 2 bit integer 30 fractional bit
 
+reg signed [WIDTH*2-1:0] mult_ac_r;
+reg signed [WIDTH*2-1:0] mult_bd_r;
+reg signed [WIDTH*2-1:0] mult_ad_r;
+reg signed [WIDTH*2-1:0] mult_bc_r;
+
 always@ (posedge i_clk) begin
-	o_real_data_r <= i_valid ? $signed(mult_ac) - $signed(mult_bd) : o_real_data_r;  // 1 sign 2 bit integer 30 fractional bit 
-	o_imag_data_r <= i_valid ? $signed(mult_ad) + $signed(mult_bc) : o_imag_data_r;  // 1 sign 2 bit integer 30 fractional bit
-	o_valid_r     <= i_valid;
+	o_real_data_r <= o_valid_r[0] ? $signed(mult_ac_r) - $signed(mult_bd_r) : o_real_data_r;  // 1 sign 2 bit integer 30 fractional bit 
+	o_imag_data_r <= o_valid_r[0] ? $signed(mult_ad_r) + $signed(mult_bc_r) : o_imag_data_r;  // 1 sign 2 bit integer 30 fractional bit
+	o_valid_r     <= {o_valid_r[0], i_valid};
+	mult_ac_r     <= mult_ac;
+	mult_bd_r     <= mult_bd;
+	mult_ad_r     <= mult_ad;
+	mult_bc_r     <= mult_bc;
 end
 
 assign o_data = {o_real_data_r, o_imag_data_r};
-assign o_valid = o_valid_r;
+assign o_valid = o_valid_r[1];
 
 endmodule
 

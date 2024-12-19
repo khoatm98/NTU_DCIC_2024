@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version S-2021.06-SP2 for linux64 -- Aug 24, 2021
-#@ # Date:   Sun Dec 15 15:19:11 2024
+#@ # Date:   Thu Dec 19 06:16:50 2024
 #@ # Run by: MingKe@cad46
 #@ 
 
@@ -7970,8 +7970,8 @@ source /usr/cad/synopsys/synthesis/cur/admin/setup/.synopsys_dc.setup
 
 #@ # -- End source /usr/cad/synopsys/synthesis/cur/admin/setup/.synopsys_dc.setup
 
-source -echo -verbose /home/MingKe/NTU_CVSD2024/02_SYN/syn.tcl
-#@ # -- Starting source /home/MingKe/NTU_CVSD2024/02_SYN/syn.tcl
+source -echo -verbose /home/MingKe/NTU_DCIC_2024/02_SYN/syn.tcl
+#@ # -- Starting source /home/MingKe/NTU_DCIC_2024/02_SYN/syn.tcl
 
 #@ # Setting environment
 #@ sh mkdir -p Netlist
@@ -7991,7 +7991,7 @@ source -echo -verbose /home/MingKe/NTU_CVSD2024/02_SYN/syn.tcl
 #@ 
 #@ 
 #@ # Import Design
-#@ set DESIGN "ed25519"
+#@ set DESIGN "MIMO_detector"
 #@ 
 #@ set hdlin_translate_off_skip_text "TRUE"
 #@ set edifout_netlist_only "TRUE"
@@ -8009,23 +8009,23 @@ source -echo -verbose /home/MingKe/NTU_CVSD2024/02_SYN/syn.tcl
 #@ link
 #@ 
 #@ 
-#@ source -echo -verbose ./ed25519_dc.sdc
-#@ # -- Starting source ./ed25519_dc.sdc
+#@ source -echo -verbose ./MIMO_detector.sdc
+#@ # -- Starting source ./MIMO_detector.sdc
 
 #@ # operating conditions and boundary conditions #
 #@ 
-#@ set cycle  5.1        ;#clock period defined by designer
+#@ set cycle  6        ;#clock period defined by designer
 #@ 
-#@ create_clock -period $cycle [get_ports  i_clk]
-#@ set_dont_touch_network      [get_clocks i_clk]
-#@ set_fix_hold                [get_clocks i_clk]
-#@ set_ideal_network           [get_ports i_clk]
+#@ create_clock -period $cycle [get_ports  Clk]
+#@ set_dont_touch_network      [get_clocks Clk]
+#@ set_fix_hold                [get_clocks Clk]
+#@ set_ideal_network           [get_ports Clk]
 #@ 
-#@ set_clock_uncertainty  0.2 [get_clocks i_clk]
-#@ set_clock_latency      0.5  [get_clocks i_clk]
+#@ set_clock_uncertainty  0.3 [get_clocks Clk]
+#@ set_clock_latency      0.5  [get_clocks Clk]
 #@ 
-#@ set_input_delay  1      -clock i_clk [remove_from_collection [all_inputs] [get_ports i_clk]]
-#@ set_output_delay 1      -clock i_clk [all_outputs] 
+#@ set_input_delay  3      -clock Clk [remove_from_collection [all_inputs] [get_ports Clk]]
+#@ set_output_delay 3      -clock Clk [all_outputs] 
 #@ set_load         1     [all_outputs]
 #@ set_drive        1     [all_inputs]
 #@ 
@@ -8034,7 +8034,7 @@ source -echo -verbose /home/MingKe/NTU_CVSD2024/02_SYN/syn.tcl
 #@ set_max_fanout 20 [all_inputs]
 #@ 
 #@ 
-#@ # -- End source ./ed25519_dc.sdc
+#@ # -- End source ./MIMO_detector.sdc
 
 #@ 
 #@ # Compile Design
